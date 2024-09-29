@@ -1,22 +1,26 @@
 /* src/components/CategoriesSection.css */
 .categories-section {
-  background-color: #f9f9f9;
-  /* Usar um tom suave */
-  padding: 50px 5%;
+  background-color: #fff;
+  /* Mudando para um fundo branco mais limpo */
+  padding: 40px 5%;
+  /* Reduzindo o padding para dar mais espaço */
   text-align: center;
   animation: fadeIn 1s ease-in-out;
-  border-radius: 10px;
-  /* Bordas arredondadas */
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  /* Sombra suave */
+  border-radius: 12px;
+  /* Bordas arredondadas mais suaves */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  /* Aumentando a sombra para mais destaque */
+  margin-top: 40px;
+  /* Adicionando margem superior para separação */
 }
 
-
 .categories-section h2 {
-  font-size: 2.4rem;
-  /* Aumentando o tamanho do título */
-  margin-bottom: 40px;
+  font-size: 2.5rem;
+  /* Aumentando um pouco o tamanho do título */
   color: #333;
+  /* Cor do texto */
+  margin-bottom: 20px;
+  /* Ajustando margem inferior */
 }
 
 .categories-cards {
@@ -24,17 +28,19 @@
   justify-content: center;
   /* Centraliza os cards */
   gap: 30px;
+  /* Espaçamento entre os cards */
   margin-bottom: 30px;
   flex-wrap: wrap;
   /* Permite a quebra de linha em telas menores */
 }
 
 .category-card {
-  background-color: #f0f0f0;
+  background-color: #f9f9f9;
   /* Cor de fundo para os cards */
   padding: 30px 20px;
   /* Ajuste de padding para proporcionar mais espaço interno */
   border-radius: 12px;
+  /* Bordas arredondadas nos cards */
   width: 200px;
   /* Largura dos cards */
   height: 320px;
@@ -44,16 +50,16 @@
   /* Centraliza verticalmente o conteúdo do card */
   justify-content: center;
   flex-direction: column;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-  /* Sombras mais suaves */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  /* Sombra mais proeminente */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .category-card:hover {
-  transform: translateY(-10px) scale(1.05);
-  /* Efeito de hover mais suave */
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
-  /* Efeito de sombra ao passar o mouse */
+  transform: translateY(-5px) scale(1.05);
+  /* Efeito de hover suavizado */
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+  /* Aumentando a sombra ao passar o mouse */
 }
 
 .category-card img {
@@ -70,35 +76,48 @@
 
 .category-card:hover img {
   transform: scale(1.1);
-  /* Efeito de zoom mais suave ao passar o mouse */
+  /* Efeito de zoom suave ao passar o mouse */
 }
 
 .category-card h3 {
   font-size: 1.3rem;
+  /* Tamanho do texto */
   color: #000;
+  /* Cor do texto */
 }
 
 .bronze {
   background-color: #cd7f32;
+  /* Cor bronze */
 }
 
 .silver {
   background-color: #c0c0c0;
+  /* Cor prata */
 }
 
 .gold {
   background-color: #ffd700;
+  /* Cor ouro */
 }
 
 .learn-more-button {
   padding: 12px 35px;
+  /* Padding do botão */
   background-color: #e63946;
+  /* Cor do botão */
   color: #fff;
+  /* Cor do texto do botão */
   border: none;
+  /* Sem borda */
   cursor: pointer;
+  /* Cursor de ponteiro */
   border-radius: 5px;
+  /* Bordas arredondadas */
   font-size: 1rem;
+  /* Tamanho da fonte */
   transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+  /* Transições */
   display: inline-block;
   /* Permite a centralização */
   margin: 20px auto;
@@ -109,8 +128,11 @@
 
 .learn-more-button:hover {
   transform: scale(1.1);
+  /* Efeito de zoom ao passar o mouse */
   background-color: #d12736;
+  /* Cor do botão ao passar o mouse */
   box-shadow: 0px 6px 16px rgba(230, 57, 70, 0.4);
+  /* Efeito de sombra ao passar o mouse */
 }
 
 @media (max-width: 768px) {

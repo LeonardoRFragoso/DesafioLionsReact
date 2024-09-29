@@ -3,10 +3,12 @@
   text-align: center;
   font-family: 'Roboto', sans-serif;
   /* Garantindo que a fonte seja aplicada */
-  background-color: #f9f9f9;
+  background-color: #fff;
   /* Fundo claro para todo o aplicativo */
   color: #333;
   /* Cor do texto padrão */
+  min-height: 100vh;
+  /* Garantindo que o aplicativo ocupe toda a altura da tela */
 }
 
 .header {
@@ -18,40 +20,57 @@
   font-family: 'Roboto', sans-serif;
   background-color: #ffffff;
   /* Mantendo um fundo branco para o conteúdo */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  /* Sombra leve para o conteúdo principal */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  /* Sombra leve e mais suave para o conteúdo principal */
   border-radius: 10px;
   /* Borda arredondada */
 }
 
 h1 {
   font-size: 2.5rem;
+  /* Tamanho do título principal */
   font-weight: 700;
+  /* Negrito para destaque */
   color: #222;
   /* Texto mais escuro para melhor legibilidade */
+  margin-bottom: 20px;
+  /* Espaçamento inferior para separar do próximo conteúdo */
 }
 
 h2,
 h3 {
   font-weight: 500;
+  /* Peso da fonte para subtítulos */
+  color: #444;
+  /* Tom de cinza mais escuro para subtítulos */
 }
 
 p {
   font-size: 1rem;
+  /* Tamanho da fonte padrão para parágrafos */
   line-height: 1.6;
+  /* Melhorando a legibilidade com espaçamento entre linhas */
   color: #555;
   /* Mantendo um cinza escuro para parágrafos */
+  margin-bottom: 15px;
+  /* Espaçamento inferior para separar parágrafos */
 }
 
 button {
-  padding: 10px 20px;
+  padding: 12px 25px;
+  /* Ajustando o padding do botão para um tamanho mais elegante */
   font-family: 'Roboto', sans-serif;
+  /* Aplicando fonte Roboto ao botão */
   font-size: 1rem;
+  /* Tamanho da fonte do botão */
   border: none;
+  /* Sem borda */
   border-radius: 5px;
+  /* Bordas arredondadas */
   cursor: pointer;
+  /* Cursor de ponteiro ao passar o mouse */
   transition: background-color 0.3s, transform 0.3s;
-  /* Adicionando transição de transformação */
+  /* Transições suaves */
   background-color: #e63946;
   /* Cor de fundo padrão do botão */
   color: white;

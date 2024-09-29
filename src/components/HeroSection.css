@@ -4,15 +4,17 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 50px 8%;
-  /* Aumentando um pouco o padding para mais espaçamento */
-  background: #f9f9f9;
-  /* Cor de fundo suave */
+  padding: 40px 8%;
+  /* Ajustando o padding para mais espaço */
+  background: #fff;
+  /* Mudando para um fundo branco mais limpo */
   height: calc(100vh - 80px);
   gap: 30px;
   /* Aumentando o espaçamento para uma sensação mais arejada */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  /* Sombra suave na seção */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  /* Sombra mais pronunciada na seção */
+  border-radius: 12px;
+  /* Bordas arredondadas */
 }
 
 .hero-content {
@@ -65,7 +67,7 @@
   /* Efeito de escala no hover */
   background-color: #d12736;
   /* Cor do botão ao passar o mouse */
-  box-shadow: 0px 6px 16px rgba(230, 57, 70, 0.3);
+  box-shadow: 0px 6px 16px rgba(230, 57, 70, 0.4);
   /* Sombra mais intensa ao passar o mouse */
 }
 

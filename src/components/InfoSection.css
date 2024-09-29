@@ -1,0 +1,112 @@
+/* src/components/InfoSection.css */
+
+.info-section {
+  display: flex;
+  justify-content: space-around;
+  /* Espaçamento entre os cartões */
+  padding: 40px;
+  background-color: #fff;
+  /* Cor de fundo da seção */
+  margin-top: 20px;
+  /* Espaçamento acima */
+  gap: 20px;
+  /* Espaçamento entre os cartões */
+  animation: fadeIn 1s ease-in-out;
+  /* Animação ao aparecer */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  /* Sombra na seção para destaque */
+}
+
+.info-card {
+  background-color: #f9f9f9;
+  /* Cor de fundo do cartão */
+  padding: 30px;
+  /* Espaçamento interno */
+  border-radius: 15px;
+  /* Bordas arredondadas */
+  width: 30%;
+  /* Largura dos cartões */
+  text-align: center;
+  /* Centraliza o texto no cartão */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  /* Sombra suave */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  /* Transição suave */
+}
+
+.info-card:hover {
+  transform: translateY(-10px) scale(1.05);
+  /* Efeito de hover mais pronunciado */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  /* Sombra mais intensa ao passar o mouse */
+}
+
+.info-card h3 {
+  margin-bottom: 10px;
+  /* Espaço abaixo do título */
+  font-size: 1.4rem;
+  /* Tamanho da fonte do título */
+  color: #333;
+  /* Cor do título */
+}
+
+.info-card p {
+  color: #666;
+  /* Cor do texto */
+}
+
+.info-image {
+  width: 100px;
+  /* Tamanho da imagem */
+  height: 100px;
+  /* Tamanho da imagem */
+  border-radius: 50%;
+  /* Bordas arredondadas */
+  margin-bottom: 15px;
+  /* Espaço abaixo da imagem */
+  transition: transform 0.3s ease;
+  /* Transição suave */
+  object-fit: cover;
+  /* Ajusta a imagem para cobrir o contêiner */
+  object-position: top center;
+  /* Centraliza a imagem dentro do contêiner */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  /* Sombra suave na imagem */
+}
+
+.info-card:hover .info-image {
+  transform: scale(1.1);
+  /* Efeito de zoom na imagem ao passar o mouse */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    /* Opacidade inicial */
+    transform: translateY(20px);
+    /* Movimentação para baixo */
+  }
+
+  to {
+    opacity: 1;
+    /* Opacidade final */
+    transform: translateY(0);
+    /* Retorna à posição original */
+  }
+}
+
+@media (max-width: 768px) {
+  .info-section {
+    flex-direction: column;
+    /* Muda a direção para coluna em telas menores */
+    align-items: center;
+    /* Centraliza os cartões */
+    gap: 20px;
+    /* Espaçamento entre cartões */
+  }
+
+  .info-card {
+    width: 80%;
+    /* Largura dos cartões em dispositivos menores */
+  }
+}

@@ -1,0 +1,70 @@
+/* src/components/MainContent.css */
+.main-content {
+  padding: 60px 20px;
+  /* Adicionando espaçamento ao redor da seção principal */
+  max-width: 1200px;
+  margin: 0 auto;
+  /* Centraliza o conteúdo */
+  font-family: 'Roboto', sans-serif;
+  /* Aplicando a fonte Roboto */
+  color: #333;
+  /* Cor de texto padrão */
+}
+
+.main-content h2 {
+  font-size: 2rem;
+  /* Tamanho adequado para títulos */
+  margin-bottom: 20px;
+  text-align: center;
+  /* Centraliza os títulos */
+  color: #222;
+  /* Mantém um tom de cor consistente */
+}
+
+.main-content p {
+  font-size: 1rem;
+  line-height: 1.6;
+  /* Melhor legibilidade */
+  margin-bottom: 20px;
+}
+
+.main-content .highlight {
+  color: #ff5c5c;
+  /* Destaque de cor */
+  font-weight: bold;
+}
+
+.main-content .button {
+  background-color: #ff5c5c;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.main-content .button:hover {
+  background-color: #e14c4c;
+  /* Efeito de hover */
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    padding: 40px 10px;
+    /* Ajuste para telas menores */
+  }
+
+  .main-content h2 {
+    font-size: 1.5rem;
+    /* Reduzindo tamanho do título */
+  }
+
+  .main-content p {
+    font-size: 0.9rem;
+    /* Reduzindo tamanho da fonte */
+  }
+}

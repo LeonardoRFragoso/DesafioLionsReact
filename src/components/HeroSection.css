@@ -1,0 +1,165 @@
+/* src/components/HeroSection.css */
+
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 8%;
+  /* Aumentando um pouco o padding para mais espaçamento */
+  background: #f9f9f9;
+  /* Cor de fundo suave */
+  height: calc(100vh - 80px);
+  gap: 30px;
+  /* Aumentando o espaçamento para uma sensação mais arejada */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  /* Sombra suave na seção */
+}
+
+.hero-content {
+  max-width: 50%;
+  /* Ajustando para dar mais destaque ao texto */
+  animation: fadeIn 1s ease-in-out;
+}
+
+.hero-content h1 {
+  font-size: 2.8rem;
+  /* Tamanho do título */
+  color: #333;
+  /* Cor do texto */
+  margin-bottom: 15px;
+  /* Ajustando o espaçamento */
+  line-height: 1.3;
+  /* Melhorando a legibilidade */
+}
+
+.hero-content p {
+  font-size: 1.1rem;
+  /* Tamanho do texto */
+  color: #666;
+  /* Cor do texto */
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.cta-button {
+  background-color: #e63946;
+  /* Cor do botão */
+  color: #fff;
+  /* Cor do texto do botão */
+  padding: 12px 30px;
+  /* Ajustando o padding para um botão mais elegante */
+  border: none;
+  /* Sem borda */
+  border-radius: 5px;
+  /* Bordas arredondadas */
+  cursor: pointer;
+  /* Cursor de ponteiro */
+  font-size: 1rem;
+  /* Tamanho da fonte */
+  transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+  /* Transição suave */
+}
+
+.cta-button:hover {
+  transform: scale(1.05);
+  /* Efeito de escala no hover */
+  background-color: #d12736;
+  /* Cor do botão ao passar o mouse */
+  box-shadow: 0px 6px 16px rgba(230, 57, 70, 0.3);
+  /* Sombra mais intensa ao passar o mouse */
+}
+
+.hero-image {
+  max-width: 30%;
+  /* Reduzindo para equilibrar com o texto */
+  display: flex;
+  /* Flexbox para centralização */
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease-in-out;
+  /* Transição suave */
+}
+
+.hero-image img {
+  width: 100%;
+  /* Ajustando para caber no card */
+  height: auto;
+  /* Mantém a proporção da imagem */
+  border-radius: 10px;
+  /* Bordas arredondadas na imagem */
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+  /* Sombra na imagem */
+  animation: fadeIn 1.5s ease-in-out;
+  /* Animação ao aparecer */
+}
+
+.hero-image:hover img {
+  transform: scale(1.05);
+  /* Efeito de zoom suave ao passar o mouse */
+  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.2);
+  /* Sombra mais pronunciada no hover */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    /* Opacidade inicial */
+    transform: translateY(20px);
+    /* Movimentação para baixo */
+  }
+
+  to {
+    opacity: 1;
+    /* Opacidade final */
+    transform: translateY(0);
+    /* Retorna à posição original */
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    flex-direction: column;
+    /* Muda a direção para coluna em telas menores */
+    text-align: center;
+    /* Centraliza o texto */
+    padding: 30px 5%;
+    /* Ajuste de padding para telas menores */
+    gap: 15px;
+    /* Menos espaçamento em dispositivos móveis */
+    height: auto;
+    /* Altura automática */
+  }
+
+  .hero-content {
+    max-width: 90%;
+    /* Permitindo mais espaço para o texto */
+  }
+
+  .hero-image {
+    margin-top: 20px;
+    /* Espaçamento acima da imagem */
+    width: 80%;
+    /* Ajuste maior para telas menores */
+  }
+
+  .hero-content h1 {
+    font-size: 2.3rem;
+    /* Ajuste de tamanho para dispositivos móveis */
+    margin-bottom: 10px;
+    /* Ajustando o espaçamento */
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+    /* Tamanho do texto para dispositivos móveis */
+    margin-bottom: 15px;
+    /* Espaçamento abaixo do texto */
+  }
+
+  .cta-button {
+    padding: 10px 20px;
+    /* Ajuste de padding em telas menores */
+    font-size: 0.9rem;
+    /* Tamanho da fonte do botão */
+  }
+}

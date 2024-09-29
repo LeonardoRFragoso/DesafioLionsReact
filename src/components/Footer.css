@@ -1,0 +1,110 @@
+/* src/components/Footer.css */
+
+
+.footer-content {
+  max-width: 1200px;
+  /* Largura máxima */
+  margin: 0 auto;
+  /* Centraliza o conteúdo */
+  display: flex;
+  /* Usa flexbox para layout */
+  justify-content: space-between;
+  /* Distribui o espaço entre os itens */
+  align-items: center;
+  /* Centraliza verticalmente */
+  flex-wrap: wrap;
+  /* Permite quebra de linha */
+  padding: 0 20px;
+  /* Padding lateral */
+}
+
+.footer-content p {
+  margin: 0;
+  /* Remove margens */
+  font-size: 1rem;
+  /* Tamanho da fonte */
+  line-height: 1.5;
+  /* Espaçamento entre linhas */
+  color: #bbb;
+  /* Cor do texto */
+}
+
+.footer-links {
+  display: flex;
+  /* Flexbox para links */
+  gap: 20px;
+  /* Espaçamento entre links */
+}
+
+.footer-links a {
+  color: #fff;
+  /* Cor dos links */
+  text-decoration: none;
+  /* Remove sublinhado */
+  font-size: 1rem;
+  /* Tamanho da fonte */
+  transition: color 0.3s ease;
+  /* Transição de cor */
+}
+
+.footer-links a:hover {
+  color: #ff5c5c;
+  /* Cor ao passar o mouse */
+}
+
+.footer-social {
+  display: flex;
+  /* Flexbox para ícones sociais */
+  gap: 15px;
+  /* Espaçamento entre ícones */
+  margin-top: 10px;
+  /* Espaço acima dos ícones */
+  justify-content: center;
+  /* Centraliza os ícones horizontalmente */
+}
+
+.footer-social a {
+  display: inline-flex;
+  /* Garante que o link e a imagem sejam tratados como um bloco flexível */
+  justify-content: center;
+  /* Centraliza o ícone dentro do link */
+  align-items: center;
+  /* Alinha verticalmente */
+}
+
+.footer-social img {
+  width: 24px;
+  /* Ajuste o tamanho da imagem aqui */
+  height: auto;
+  /* Mantém a proporção da imagem */
+  transition: transform 0.3s ease;
+  /* Adiciona transição ao passar o mouse */
+}
+
+.footer-social a:hover img {
+  transform: scale(1.1);
+  /* Efeito de zoom ao passar o mouse */
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    /* Muda a direção para coluna em telas menores */
+    gap: 15px;
+    /* Ajuste de espaçamento */
+    text-align: center;
+    /* Centraliza o texto */
+  }
+
+  .footer-links {
+    flex-direction: column;
+    /* Empilha os links */
+    gap: 10px;
+    /* Espaçamento entre links */
+  }
+
+  .footer-social {
+    justify-content: center;
+    /* Centraliza os ícones */
+  }
+}

@@ -1,0 +1,201 @@
+/* src/components/PartnersSection.css */
+
+.partners-section {
+  background-color: #f8f8f8;
+  /* Cor de fundo */
+  padding: 60px 5%;
+  /* Espaçamento interno */
+  text-align: center;
+  /* Centraliza o texto */
+  margin-top: 40px;
+  /* Margem superior */
+  border-radius: 12px;
+  /* Bordas arredondadas */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  /* Sombra para profundidade */
+}
+
+.partners-content {
+  display: flex;
+  /* Flexbox para layout */
+  align-items: center;
+  /* Alinha verticalmente */
+  justify-content: space-between;
+  /* Espaço entre os itens */
+  gap: 40px;
+  /* Espaçamento entre itens */
+  flex-wrap: wrap;
+  /* Permite quebra de linha */
+}
+
+.partners-text {
+  max-width: 45%;
+  /* Largura máxima */
+  text-align: left;
+  /* Alinhamento do texto */
+  animation: fadeIn 1s ease-in-out;
+  /* Animação de entrada */
+}
+
+.partners-section h2 {
+  font-size: 2.2rem;
+  /* Tamanho do título */
+  margin-bottom: 15px;
+  /* Margem inferior */
+  color: #333;
+  /* Cor do texto */
+  line-height: 1.4;
+  /* Espaçamento entre linhas */
+}
+
+.partners-section p {
+  font-size: 1.1rem;
+  /* Tamanho da fonte */
+  margin-bottom: 30px;
+  /* Margem inferior */
+  color: #666;
+  /* Cor do texto */
+  line-height: 1.6;
+  /* Espaçamento entre linhas */
+}
+
+.partners-features {
+  display: flex;
+  /* Flexbox para recursos */
+  flex-direction: column;
+  /* Coluna para itens */
+  align-items: flex-start;
+  /* Alinha à esquerda */
+  gap: 15px;
+  /* Espaçamento entre itens */
+  margin-top: 25px;
+  /* Margem superior */
+}
+
+.feature-card {
+  background-color: #fff;
+  /* Cor de fundo */
+  padding: 15px;
+  /* Espaçamento interno */
+  border-radius: 12px;
+  /* Bordas arredondadas */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  /* Sombra */
+  width: 300px;
+  /* Largura do card */
+  transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+  /* Transições suaves */
+  display: flex;
+  /* Flexbox para card */
+  align-items: center;
+  /* Alinha verticalmente */
+  gap: 10px;
+  /* Espaçamento entre ícones e texto */
+  border: 1px solid #e0e0e0;
+  /* Borda sutil */
+}
+
+.feature-card:hover {
+  transform: translateY(-8px);
+  /* Efeito de elevação ao passar o mouse */
+  background-color: #f0f0f0;
+  /* Cor de fundo ao passar o mouse */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  /* Sombra mais intensa no hover */
+}
+
+.feature-card h3 {
+  font-size: 1rem;
+  /* Tamanho da fonte */
+  color: #333;
+  /* Cor do texto */
+}
+
+.feature-icon {
+  font-size: 1.5rem;
+  /* Tamanho do ícone */
+  color: #e63946;
+  /* Cor do ícone */
+}
+
+.partners-image {
+  max-width: 50%;
+  /* Largura máxima da imagem */
+  display: flex;
+  /* Flexbox para imagem */
+  justify-content: center;
+  /* Centraliza a imagem */
+  animation: fadeIn 1.5s ease-in-out;
+  /* Animação de entrada */
+}
+
+.partners-image img {
+  width: 100%;
+  /* Largura total */
+  height: auto;
+  /* Altura automática */
+  border-radius: 10px;
+  /* Bordas arredondadas */
+  box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.2);
+  /* Sombra suave */
+  border: 3px solid #e6e6e6;
+  /* Borda sutil */
+  transition: transform 0.3s ease;
+  /* Transição ao passar o mouse */
+}
+
+.partners-image img:hover {
+  transform: scale(1.03);
+  /* Efeito de destaque ao passar o mouse */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    /* Começa invisível */
+    transform: translateY(20px);
+    /* Move para baixo */
+  }
+
+  to {
+    opacity: 1;
+    /* Totalmente visível */
+    transform: translateY(0);
+    /* Retorna à posição original */
+  }
+}
+
+@media (max-width: 768px) {
+  .partners-content {
+    flex-direction: column;
+    /* Coloca itens em coluna */
+    gap: 20px;
+    /* Espaçamento reduzido */
+  }
+
+  .partners-text {
+    max-width: 100%;
+    /* Largura total em dispositivos móveis */
+    text-align: center;
+    /* Centraliza o texto */
+  }
+
+  .partners-features {
+    flex-direction: column;
+    /* Coloca itens em coluna */
+    align-items: center;
+    /* Centraliza os itens */
+  }
+
+  .feature-card {
+    width: 80%;
+    /* Largura dos cards em dispositivos móveis */
+  }
+
+  .partners-image {
+    max-width: 100%;
+    /* Largura total da imagem em dispositivos móveis */
+    margin-top: 20px;
+    /* Margem superior */
+  }
+}

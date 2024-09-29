@@ -1,0 +1,28 @@
+/* src/index.css */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  /* Fonte global */
+  background-color: #f9f9f9;
+  /* Cor de fundo para um visual minimalista */
+  color: #333;
+  /* Cor do texto */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Roboto', sans-serif;
+  /* Garantir que a fonte se aplique a todos os títulos */
+}
+
+p,
+a,
+li {
+  font-family: 'Roboto', sans-serif;
+  /* Aplicar a fonte a parágrafos, links e itens de lista */
+}

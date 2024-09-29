@@ -1,0 +1,73 @@
+/* src/components/Navbar.css */
+
+.navbar {
+  display: flex;
+  /* Flexbox para layout */
+  justify-content: space-between;
+  /* Espaçamento entre itens */
+  align-items: center;
+  /* Alinha verticalmente */
+  padding: 20px 60px;
+  /* Espaçamento interno */
+  background-color: #333;
+  /* Cor de fundo */
+  color: white;
+  /* Cor do texto */
+  border-bottom: 2px solid #555;
+  /* Borda inferior */
+  font-family: 'Roboto', sans-serif;
+  /* Fonte Roboto */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  /* Sombra suave para destaque */
+}
+
+.logo {
+  max-height: 80px;
+  /* Altura máxima da logo */
+  width: auto;
+  /* Mantém proporção */
+  margin-left: 10px;
+  /* Espaçamento à esquerda */
+}
+
+ul {
+  display: flex;
+  /* Flexbox para lista de navegação */
+  gap: 50px;
+  /* Espaçamento entre itens da lista */
+  list-style: none;
+  /* Remove marcadores */
+  margin: 0;
+  /* Remove margens */
+}
+
+li {
+  margin: 0;
+  /* Remove margens */
+}
+
+a {
+  color: white;
+  /* Cor do link */
+  text-decoration: none;
+  /* Remove sublinhado */
+  font-size: 1.2rem;
+  /* Tamanho da fonte */
+  padding: 8px 12px;
+  /* Espaçamento interno do link */
+  font-family: 'Roboto', sans-serif;
+  /* Aplica fonte Roboto aos links */
+  transition: background-color 0.3s, color 0.3s;
+  /* Transições suaves */
+}
+
+a:hover {
+  background-color: #555;
+  /* Cor de fundo ao passar o mouse */
+  border-radius: 5px;
+  /* Bordas arredondadas */
+  color: #fff;
+  /* Cor do texto ao passar o mouse */
+  text-decoration: none;
+  /* Mantém sem sublinhado */
+}

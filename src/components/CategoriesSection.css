@@ -1,0 +1,141 @@
+/* src/components/CategoriesSection.css */
+.categories-section {
+  background-color: #f9f9f9;
+  /* Usar um tom suave */
+  padding: 50px 5%;
+  text-align: center;
+  animation: fadeIn 1s ease-in-out;
+  border-radius: 10px;
+  /* Bordas arredondadas */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  /* Sombra suave */
+}
+
+
+.categories-section h2 {
+  font-size: 2.4rem;
+  /* Aumentando o tamanho do título */
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.categories-cards {
+  display: flex;
+  justify-content: center;
+  /* Centraliza os cards */
+  gap: 30px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+  /* Permite a quebra de linha em telas menores */
+}
+
+.category-card {
+  background-color: #f0f0f0;
+  /* Cor de fundo para os cards */
+  padding: 30px 20px;
+  /* Ajuste de padding para proporcionar mais espaço interno */
+  border-radius: 12px;
+  width: 200px;
+  /* Largura dos cards */
+  height: 320px;
+  /* Altura para dar espaço à imagem */
+  display: flex;
+  align-items: center;
+  /* Centraliza verticalmente o conteúdo do card */
+  justify-content: center;
+  flex-direction: column;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  /* Sombras mais suaves */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category-card:hover {
+  transform: translateY(-10px) scale(1.05);
+  /* Efeito de hover mais suave */
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+  /* Efeito de sombra ao passar o mouse */
+}
+
+.category-card img {
+  width: 150px;
+  /* Ajustando o tamanho da imagem */
+  height: 150px;
+  /* Ajustando o tamanho da imagem */
+  margin-bottom: 20px;
+  /* Mais espaço entre a imagem e o título */
+  object-fit: contain;
+  /* Mantém a proporção da imagem */
+  transition: transform 0.3s ease;
+}
+
+.category-card:hover img {
+  transform: scale(1.1);
+  /* Efeito de zoom mais suave ao passar o mouse */
+}
+
+.category-card h3 {
+  font-size: 1.3rem;
+  color: #000;
+}
+
+.bronze {
+  background-color: #cd7f32;
+}
+
+.silver {
+  background-color: #c0c0c0;
+}
+
+.gold {
+  background-color: #ffd700;
+}
+
+.learn-more-button {
+  padding: 12px 35px;
+  background-color: #e63946;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+  display: inline-block;
+  /* Permite a centralização */
+  margin: 20px auto;
+  /* Centraliza o botão */
+  text-align: center;
+  /* Garante que o texto no botão esteja centralizado */
+}
+
+.learn-more-button:hover {
+  transform: scale(1.1);
+  background-color: #d12736;
+  box-shadow: 0px 6px 16px rgba(230, 57, 70, 0.4);
+}
+
+@media (max-width: 768px) {
+  .categories-cards {
+    flex-direction: column;
+    /* Empilha os cards em telas menores */
+    gap: 20px;
+    /* Ajustando o espaçamento */
+  }
+
+  .category-card {
+    width: 90%;
+    /* Largura dos cards em dispositivos menores */
+    height: auto;
+    /* Altura automática */
+    margin: 0 auto;
+    /* Centraliza os cards */
+  }
+
+  .learn-more-button {
+    padding: 10px 25px;
+    /* Ajusta o padding do botão em telas menores */
+    font-size: 0.9rem;
+    /* Tamanho da fonte do botão */
+    margin: 20px auto;
+    /* Garante que o botão esteja centralizado */
+  }
+}

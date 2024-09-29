@@ -1,0 +1,66 @@
+/* src/App.css */
+.App {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  /* Garantindo que a fonte seja aplicada */
+  background-color: #f9f9f9;
+  /* Fundo claro para todo o aplicativo */
+  color: #333;
+  /* Cor do texto padrão */
+}
+
+.header {
+  padding: 20px;
+}
+
+.main-content {
+  padding: 40px 20px;
+  font-family: 'Roboto', sans-serif;
+  background-color: #ffffff;
+  /* Mantendo um fundo branco para o conteúdo */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  /* Sombra leve para o conteúdo principal */
+  border-radius: 10px;
+  /* Borda arredondada */
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #222;
+  /* Texto mais escuro para melhor legibilidade */
+}
+
+h2,
+h3 {
+  font-weight: 500;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555;
+  /* Mantendo um cinza escuro para parágrafos */
+}
+
+button {
+  padding: 10px 20px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  /* Adicionando transição de transformação */
+  background-color: #e63946;
+  /* Cor de fundo padrão do botão */
+  color: white;
+  /* Cor do texto do botão */
+}
+
+button:hover {
+  background-color: #d12736;
+  /* Cor ao passar o mouse */
+  transform: scale(1.05);
+  /* Efeito de zoom ao passar o mouse */
+}

@@ -1,10 +1,10 @@
-// src/components/PartnersSection.js
+// src/components/Partners/PartnersSection.js
 import React from 'react';
-import './PartnersSection.css';
-import '../MainContent.css'; // Importando os estilos principais
+import './PartnersSection.css'; // Mantém a importação do CSS na mesma pasta
+import '../../MainContent.css'; // Ajuste o caminho se o MainContent.css estiver em um nível diferente
 
 // Importando a imagem correspondente
-import equipeImage from '../assets/equipe.png';
+import equipeImage from '../../assets/equipe.png'; // Ajuste o caminho da imagem
 
 const PartnersSection = () => {
   return (

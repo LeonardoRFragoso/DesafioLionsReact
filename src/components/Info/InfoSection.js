@@ -1,12 +1,12 @@
-// src/components/InfoSection.js
+// src/components/Info/InfoSection.js
 import React from 'react';
-import './InfoSection.css';
-import '../MainContent.css'; // Importando MainContent.css para garantir estilos consistentes
+import './InfoSection.css'; // Mantém a importação do CSS na mesma pasta
+import '../../MainContent.css'; // Ajuste o caminho se o MainContent.css estiver em um nível diferente
 
 // Importando as imagens correspondentes
-import rendaExtraImage from '../assets/ganhe-renda.png';
-import trabalheDeOndeQuiserImage from '../assets/trabalhe.png';
-import lucroAltoImage from '../assets/lucro-alto.png';
+import rendaExtraImage from '../../assets/ganhe-renda.png'; // Ajuste o caminho da imagem
+import trabalheDeOndeQuiserImage from '../../assets/trabalhe.png'; // Ajuste o caminho da imagem
+import lucroAltoImage from '../../assets/lucro-alto.png'; // Ajuste o caminho da imagem
 
 const InfoSection = () => {
   return (

@@ -1,8 +1,8 @@
-// src/components/Navbar.js
+// src/components/Navbar/Navbar.js
 import React from 'react';
-import './Navbar.css';
-import '../MainContent.css'; // Importando os estilos principais
-import logo from '../assets/lions_seminovos_logo.jpeg'; // Caminho relativo correto
+import './Navbar.css'; // Mantém a importação do CSS na mesma pasta
+import '../../MainContent.css'; // Ajuste o caminho se o MainContent.css estiver em um nível diferente
+import logo from '../../assets/lions_seminovos_logo.jpeg'; // Ajuste o caminho da imagem
 
 const Navbar = () => {
   return (

@@ -1,12 +1,12 @@
-// src/components/CategoriesSection.js
+// src/components/Categories/CategoriesSection.js
 import React from 'react';
-import './CategoriesSection.css';
-import '../MainContent.css'; // Importando MainContent.css para garantir estilos consistentes
+import './CategoriesSection.css'; // Mantém a importação do CSS na mesma pasta
+import '../../MainContent.css'; // Ajuste o caminho se o MainContent.css estiver em um nível diferente
 
-// Importando as imagens
-import bronzeImage from '../assets/bronze.png';
-import silverImage from '../assets/prata.png';
-import goldImage from '../assets/ouro.png';
+// Ajustando os caminhos para as imagens
+import bronzeImage from '../../assets/bronze.png';
+import silverImage from '../../assets/prata.png';
+import goldImage from '../../assets/ouro.png';
 
 const CategoriesSection = () => {
   return (

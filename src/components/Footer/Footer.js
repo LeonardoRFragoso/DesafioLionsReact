@@ -1,11 +1,14 @@
+// src/components/Footer/Footer.js
 import React from 'react';
-import './Footer.css';
-import '../MainContent.css'; // Importando MainContent.css para garantir estilos consistentes
-import facebookIcon from '../assets/facebook-icon.png'; // Certifique-se de que o caminho esteja correto
-import youtubeLogo from '../assets/youtube-logo.png';
-import linkedinLogo from '../assets/linkedin-logo.png';
-import twitterIcon from '../assets/twitter-icon.png';
-import instagramIcon from '../assets/instagram-icon.png';
+import './Footer.css'; // Mantém a importação do CSS na mesma pasta
+import '../../MainContent.css'; // Ajuste o caminho se o MainContent.css estiver em um nível diferente
+
+// Ajustando os caminhos para os ícones de mídia social
+import facebookIcon from '../../assets/facebook-icon.png';
+import youtubeLogo from '../../assets/youtube-logo.png';
+import linkedinLogo from '../../assets/linkedin-logo.png';
+import twitterIcon from '../../assets/twitter-icon.png';
+import instagramIcon from '../../assets/instagram-icon.png';
 
 const Footer = () => {
   return (

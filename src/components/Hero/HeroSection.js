@@ -1,8 +1,8 @@
-// src/components/HeroSection.js
+// src/components/Hero/HeroSection.js
 import React from 'react';
-import './HeroSection.css';
-import '../MainContent.css'; // Importando MainContent.css para garantir os estilos consistentes
-import logo from '../assets/lions_seminovos_logo.jpeg'; // Importando a imagem corretamente
+import './HeroSection.css'; // Mantém a importação do CSS na mesma pasta
+import '../../MainContent.css'; // Ajuste o caminho se o MainContent.css estiver em um nível diferente
+import logo from '../../assets/lions_seminovos_logo.jpeg'; // Ajuste o caminho da imagem
 
 const HeroSection = () => {
   return (

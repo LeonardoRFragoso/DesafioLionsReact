@@ -26,7 +26,7 @@ A estrutura do projeto é organizada em componentes, permitindo fácil manutenç
 
 1. Clone este repositório em sua máquina local.
    ```bash
-   git clone https://github.com/seu_usuario/lions-seminovos-desafio.git
+   git clone https://github.com/LeonardoRFragoso/DesafioLionsReact
    ```
 
 2. Navegue até o diretório do projeto:
@@ -56,4 +56,4 @@ Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para ma
 
 ## Contato
 
-Para mais informações, entre em contato com [seu_email@exemplo.com](mailto:seu_email@exemplo.com).
+Para mais informações, entre em contato com leonardorfragoso@gmail.com

@@ -71,3 +71,35 @@ a:hover {
   text-decoration: none;
   /* Mantém sem sublinhado */
 }
+
+/* Estilos para a Search Bar */
+.search-form {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+  /* Espaçamento entre a lista e a barra de busca */
+}
+
+.search-input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.search-button {
+  padding: 8px 12px;
+  border: none;
+  background-color: #e63946;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 5px;
+  /* Espaçamento entre o input e o botão */
+  transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+  background-color: #d12736;
+  /* Cor do botão ao passar o mouse */
+}

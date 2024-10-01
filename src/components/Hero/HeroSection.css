@@ -71,6 +71,30 @@
   /* Sombra mais intensa ao passar o mouse */
 }
 
+.external-link-button {
+  background-color: #ffcc00;
+  /* Cor do botão externo */
+  color: #fff;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+  /* Transição suave */
+  margin-top: 10px;
+  /* Espaçamento entre os botões */
+}
+
+.external-link-button:hover {
+  transform: scale(1.05);
+  /* Efeito de escala no hover */
+  background-color: #e6b800;
+  /* Cor do botão ao passar o mouse */
+  box-shadow: 0px 6px 16px rgba(230, 57, 70, 0.4);
+  /* Sombra mais intensa ao passar o mouse */
+}
+
 .hero-image {
   width: 50%;
   /* Definindo largura diretamente */
@@ -94,7 +118,6 @@
   animation: fadeIn 1.5s ease-in-out;
   /* Animação ao aparecer */
 }
-
 
 .hero-image:hover img {
   transform: scale(1.05);
@@ -159,7 +182,8 @@
     /* Espaçamento abaixo do texto */
   }
 
-  .cta-button {
+  .cta-button,
+  .external-link-button {
     padding: 10px 20px;
     /* Ajuste de padding em telas menores */
     font-size: 0.9rem;

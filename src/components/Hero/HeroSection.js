@@ -13,6 +13,9 @@ const HeroSection = () => {
         <button className="cta-button" onClick={() => window.open('https://paginaexterna.com', '_blank')}>
           Clique aqui
         </button>
+        <button className="external-link-button" onClick={() => window.open('https://www.lionsseminovos.com.br', '_blank')}>
+          Visite nosso site
+        </button>
       </div>
       <div className="hero-image">
         <img src={logo} alt="Logo da Lions Seminovos" />
